@@ -14,21 +14,24 @@
   <header class="flex items-center justify-between px-6 py-4 sm:px-10 sm:py-6">
   <!-- Logo -->
   <div>
+    <a href="https://flying-ava.netlify.app/">
     <img class="w-16 sm:w-20" src="logo.png" alt="FlyingAVA Logo" />
+    </a>
   </div>
 
   <!-- Nav Links (hidden on small screens) -->
   <nav class="hidden md:flex space-x-6 text-black font-medium">
-    <a href="#" class="hover:underline">HOME</a>
-    <a href="#" class="hover:underline">ABOUT US</a>
-    <a href="#" class="hover:underline">SERVICES</a>
-    <a href="#" class="hover:underline">CONTACT</a>
+    <a href="https://flying-ava.netlify.app/" class="hover:underline">HOME</a>
+    <a href="aboutUs.html" class="hover:underline">ABOUT US</a>
+    <a href="#services" class="hover:underline">SERVICES</a>
+    <a href="#contact" class="hover:underline">CONTACT</a>
   </nav>
 
   <!-- Login + Mobile Menu Icon -->
   <div class="flex items-center space-x-4">
-    <button class="hidden md:block bg-black text-white px-4 py-2 rounded-full hover:bg-white hover:text-black border-2 border-black">LOG IN</button>
-    
+    <a href="FLYINGAVA TECH work for IIT kanpur.pdf">
+    <button class="hidden md:block bg-black text-white px-4 py-2 rounded-full hover:bg-white hover:text-black border-2 border-black">Download Brochure</button>
+    </a>    
     <!-- Mobile Menu Icon (visible on small screens) -->
     <button id="menu" class="md:hidden">
       <svg class="w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -39,10 +42,10 @@
 </header>
 <!-- Mobile menu -->
  <div id="mobileMenu" class="hidden md:hidden flex items-center justify-between px-6 text-black text-sm font-semibold">
-  <a href="#" class="hover:underline">HOME</a>
-    <a href="#" class="hover:underline">ABOUT US</a>
-    <a href="#" class="hover:underline">SERVICES</a>
-    <a href="#" class="hover:underline">CONTACT</a>
+  <a href="https://flying-ava.netlify.app/" class="hover:underline">HOME</a>
+    <a href="aboutUs.html" class="hover:underline">ABOUT US</a>
+    <a href="#services" class="hover:underline">SERVICES</a>
+    <a href="#contact" class="hover:underline">CONTACT</a>
  </div>
 
 
@@ -84,35 +87,38 @@ INDUSTRIES USING UAV AND ARTIFICIAL INTELIGENCE</p>
     <img src="IEC.jpg" alt="Startup India" class="w-full h-full object-contain" />
   </div>
 </section>
+<div class="w-full h-auto flex items-center justify-center my-6">
+  <img src="Incubed BY IIT kanpur and Pusa Krishi ICAR.png" alt="pusa krishi">
+</div>
 
   <!-- Our Services Section -->
-  <section class="px-10 py-16 bg-gray-100">
+  <section id="services" class="px-10 py-16 bg-gray-100">
     <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-      <div class="bg-white rounded-lg shadow-md p-6 text-center">
-        <img src="mechanicalServices.jpg" alt="Service 1" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2">Mechanical / Aerospace / Electronics Design</h3>
-        <p class="text-gray-600 text-sm">Complete support from concept to product development.</p>
+      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
+        <img class="rounded-t-xl" src="mechanicalServices.jpg" alt="Service 1" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-2 p-2">Mechanical / Aerospace / Electronics Design</h3>
+        <p class="text-gray-600 text-sm p-2">Complete support from concept to product development.</p>
       </div>
-      <div class="bg-white rounded-lg shadow-md p-6 text-center">
-        <img src="research_services.jpg" alt="Service 2" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2">Research-Based Analyses for Defense & Aerospace</h3>
-        <p class="text-gray-600 text-sm">Support for aerodynamics, structural & other product areas.</p>
+      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
+        <img class="rounded-t-xl" src="research_services.jpg" alt="Service 2" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-2 p-2">Research-Based Analyses for Defense & Aerospace</h3>
+        <p class="text-gray-600 text-sm p-2">Support for aerodynamics, structural & other product areas.</p>
       </div>
-      <div class="bg-white rounded-lg shadow-md p-6 text-center">
-        <img src="import_services.jpg" alt="Service 3" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2">Import & Export Support Services</h3>
-        <p class="text-gray-600 text-sm">Support for import and export of products globally</p>
+      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
+        <img class="rounded-t-xl" src="import_services.jpg" alt="Service 3" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-2 p-2">Import & Export Support Services</h3>
+        <p class="text-gray-600 text-sm p-2">Support for import and export of products globally</p>
       </div>
-      <div class="bg-white rounded-lg shadow-md p-6 text-center">
-        <img src="3dprinting_Services.jpg" alt="Service 4" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2">3D Printing (Plastic & Metal)</h3>
-        <p class="text-gray-600 text-sm">High-quality printing services for industries & academics.</p>
+      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
+        <img class="rounded-t-xl" src="3dprinting_Services.jpg" alt="Service 4" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-2 p-2">3D Printing (Plastic & Metal)</h3>
+        <p class="text-gray-600 text-sm p-2">High-quality printing services for industries & academics.</p>
       </div>
-      <div class="bg-white rounded-lg shadow-md p-6 text-center">
-        <img src="software_services.jpg" alt="Service 5" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2">Software & IT Solutions</h3>
-        <p class="text-gray-600 text-sm">Web, app, and product development tailored to your needs.</p>
+      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
+        <img class="rounded-t-xl" src="software_services.jpg" alt="Service 5" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-2 p-2">Software & IT Solutions</h3>
+        <p class="text-gray-600 text-sm p-2">Web, app, and product development tailored to your needs.</p>
       </div>
     </div>
   </section>
@@ -247,17 +253,11 @@ Aerospace Engineering, IIT Kanpur, Kanpur, Uttar Pradesh 208002, IN</p>
   <div class="flex flex-col md:flex-row justify-between items-center">
     <p class="text-sm mb-4 md:mb-0">&copy; 2025 FlyingAVA. All rights reserved.</p>
     <div class="flex space-x-4">
-      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <a href="https://www.facebook.com/p/Flyingava-tech-pvt-ltd-61566438266854/" target="_blank" aria-label="Facebook">
         <svg class="w-6 h-6 fill-current hover:text-blue-500" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.9.2 1.9.2v2.1h-1c-1 0-1.3.6-1.3 1.2V11h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"/></svg>
       </a>
-      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-        <svg class="w-6 h-6 fill-current hover:text-sky-400" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.37 8.6 8.6 0 0 1-2.73 1.04 4.3 4.3 0 0 0-7.3 3.92A12.2 12.2 0 0 1 3.16 4.87a4.3 4.3 0 0 0 1.33 5.75 4.3 4.3 0 0 1-1.95-.54v.05a4.3 4.3 0 0 0 3.45 4.2 4.3 4.3 0 0 1-1.95.07 4.3 4.3 0 0 0 4.01 3 8.6 8.6 0 0 1-5.3 1.83A8.9 8.9 0 0 1 2 19.54a12.2 12.2 0 0 0 6.6 1.94c7.92 0 12.25-6.57 12.25-12.25v-.56A8.8 8.8 0 0 0 24 5.6a8.7 8.7 0 0 1-2.54.7z"/></svg>
-      </a>
-      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+      <a href="https://in.linkedin.com/company/flyingava-tech-private-limited" target="_blank" aria-label="LinkedIn">
         <svg class="w-6 h-6 fill-current hover:text-blue-300" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.6v-5.4c0-1.3-.5-2.2-1.8-2.2s-2 .9-2 2.2v5.4h-3.6V9h3.6v1.6h.1c.5-.9 1.7-1.9 3.5-1.9 2.7 0 4.8 1.8 4.8 5.6v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM3.5 9h3.6v11.45H3.5V9zM22.2 0H1.8A1.79 1.79 0 0 0 0 1.8v20.4A1.79 1.79 0 0 0 1.8 24h20.4a1.79 1.79 0 0 0 1.8-1.8V1.8A1.79 1.79 0 0 0 22.2 0z"/></svg>
-      </a>
-      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-        <svg class="w-6 h-6 fill-current hover:text-pink-500" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.1.1 1.8.3 2.2.6.5.3.8.7 1.1 1.2.3.5.5 1.1.6 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.1-.3 1.8-.6 2.2-.3.5-.7.8-1.2 1.1-.5.3-1.1.5-2.2.6-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.1-.1-1.8-.3-2.2-.6-.5-.3-.8-.7-1.1-1.2-.3-.5-.5-1.1-.6-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.1.3-1.8.6-2.2.3-.5.7-.8 1.2-1.1.5-.3 1.1-.5 2.2-.6C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7.1.1c-1.3.1-2.2.3-3 .7a5.6 5.6 0 0 0-2.1 2.1c-.4.8-.6 1.7-.7 3C1.1 8.3 1.1 8.7 1.1 12s0 3.7.1 4.9c.1 1.3.3 2.2.7 3a5.6 5.6 0 0 0 2.1 2.1c.8.4 1.7.6 3 .7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 3-.7a5.6 5.6 0 0 0 2.1-2.1c.4-.8.6-1.7.7-3 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.7-3a5.6 5.6 0 0 0-2.1-2.1c-.8-.4-1.7-.6-3-.7C15.7.1 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.6a1.4 1.4 0 1 0-2.8 0 1.4 1.4 0 0 0 2.8 0z"/></svg>
       </a>
     </div>
   </div>
