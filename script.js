@@ -71,3 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+ document.querySelectorAll(".accordion-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const panel = document.getElementById(btn.dataset.target);
+      const icon = btn.querySelector("svg");
+      panel.classList.toggle("hidden");
+      icon.classList.toggle("rotate-180");
+    });
+  });

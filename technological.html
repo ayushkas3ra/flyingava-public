@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | FlyingAVA</title>
+  <link rel="stylesheet" href="output.css" />
+  <script src="script.js"></script>
+   <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom scrollbar for desktop */
+      @media (min-width: 1024px) {
+        ::-webkit-scrollbar {
+          width: 6px;
+          height: 6px;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: rgb(99 102 241); /* indigo‑500 */
+          border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-track {
+          background: transparent;
+        }
+      }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- ========== NAVBAR ========= -->
+    <header class="sticky top-0 z-30 bg-white shadow-sm">
+      <nav class="container mx-auto flex items-center justify-between px-4 py-4">
+        <div class="flex items-center space-x-3">
+          <a href="/">
+            <img src="logo.png" alt="FlyingAVA Logo" class="w-12 sm:w-16" />
+          </a>
+          <span class="text-xl font-extrabold text-indigo-600">FlyingAVA</span>
+        </div>
+        <ul class="hidden md:flex space-x-6 font-medium">
+          <li><a href="/" class="hover:text-indigo-600">Home</a></li>
+          <li><a href="#" class="text-indigo-600 font-semibold">About Us</a></li>
+          <li><a href="/#services" class="hover:text-indigo-600">Services</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+        </ul>
+        <div class="md:flex hidden">
+          <a href="FLYINGAVA TECH work for IIT kanpur.pdf" class="bg-black text-white px-4 py-2 rounded-full hover:bg-white hover:text-black border-2 border-black">Download Brochure</a>
+        </div>
+        <button id="menuBtn" class="md:hidden">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64h384c17.7..."/></svg>
+        </button>
+      </nav>
+      <div id="mobileMenu" class="hidden flex-col md:hidden px-6 pb-4 space-y-2">
+        <a href="/" class="hover:text-indigo-600">Home</a>
+        <a href="#" class="text-indigo-600 font-semibold">About Us</a>
+        <a href="/#services" class="hover:text-indigo-600">Services</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </div>
+    </header>
+
+
+    <!-- ========== HERO ========= -->
+    <section
+      id="home"
+      class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-24"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">
+          Dream Higher, Fly Higher
+        </h1>
+        <p class="max-w-2xl mx-auto text-lg sm:text-xl mb-8">
+          100&nbsp;kg‑payload autonomous drones bringing reliable logistics to the
+          world's most challenging terrains.
+        </p>
+        <a
+          href="#about"
+          class="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-50"
+          >Learn More</a
+        >
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========= -->
+    <section
+      id="about"
+      class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16"
+    >
+      <h2 class="text-3xl font-bold mb-10 text-center">Introduction</h2>
+      <dl class="space-y-6">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+        >
+          <dt class="font-semibold">Startup Name</dt>
+          <dd class="mt-1 sm:mt-0">FLYINGAVA TECH PVT LTD</dd>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+        >
+          <dt class="font-semibold">Headquarters</dt>
+          <dd class="mt-1 sm:mt-0">Kanpur, Uttar Pradesh</dd>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+        >
+          <dt class="font-semibold">Founded</dt>
+          <dd class="mt-1 sm:mt-0">15&nbsp;April&nbsp;2022</dd>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row sm:items-start sm:justify-between"
+        >
+          <dt class="font-semibold">Target Audience</dt>
+          <dd class="mt-1 sm:mt-0 sm:text-right">
+            Farmers in high‑altitude disaster‑prone areas, remote regions with poor
+            road connectivity, border areas, and logistics businesses such as
+            DTDC, Amazon, FedEx, UPS and so on
+          </dd>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+        >
+          <dt class="font-semibold">Team Size</dt>
+          <dd class="mt-1 sm:mt-0">
+            10 members (Professors, Engineers &amp; Staff)
+          </dd>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+        >
+          <dt class="font-semibold">Website</dt>
+          <dd class="mt-1 sm:mt-0">
+            <a
+              href="https://www.flyingava.com"
+              class="text-indigo-600 hover:underline"
+              target="_blank"
+              rel="noopener"
+              >flyingava.com</a
+            >
+          </dd>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+        >
+          <dt class="font-semibold">Demo Video</dt>
+          <dd class="mt-1 sm:mt-0">
+            <a
+              href="https://www.youtube.com/watch?v=29Ahc1GL8Kg"
+              class="text-indigo-600 hover:underline"
+              target="_blank"
+              rel="noopener"
+              >Watch on YouTube</a
+            >
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ========== FOCUS ========= -->
+    <section id="focus" class="bg-white py-16">
+      <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-6 text-center">Focus Area</h2>
+        <p class="text-lg text-center max-w-3xl mx-auto">
+          Providing logistical support in distant, disaster‑prone environments for
+          people and businesses involved in agriculture.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== TECHNOLOGY ========= -->
+    <section id="technology" class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-3xl font-bold mb-10 text-center">Technology &amp; USP</h2>
+
+      <div class="grid gap-10 lg:grid-cols-2">
+        <!-- Tech Brief -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Tech Brief</h3>
+          <p class="mb-4">
+            Our AI‑powered drone can lift <strong>100&nbsp;kg&nbsp;payload</strong> and
+            autonomously choose the best route between any source and
+            destination.
+          </p>
+          <h4 class="text-xl font-semibold mb-2">Unique Selling Proposition</h4>
+          <ul class="list-disc pl-5 space-y-2 text-gray-700">
+            <li>100&nbsp;kg payload capacity</li>
+            <li>Operates effectively in disaster‑prone areas</li>
+            <li>30‑minute minimum flight time at 100&nbsp;km/h</li>
+            <li>Route identification &amp; memory technology</li>
+          </ul>
+        </div>
+
+        <!-- Problem Statement -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Problem Statement</h3>
+          <p>
+            Remote agricultural regions face severe logistical challenges. Our
+            high‑capacity drone bridges this gap by transporting loads swiftly
+            and safely when roads or rail are inaccessible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MARKET ========= -->
+    <section id="market" class="bg-white py-16">
+      <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-10 text-center">Market &amp; Competition</h2>
+
+        <!-- Competition -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold mb-4">Competition Analysis</h3>
+          <p class="mb-2"><strong>Main competitor:</strong> E‑Hang (China)</p>
+          <p>
+            Unlike passenger‑drone makers, we focus exclusively on logistics,
+            reducing safety risks and accelerating regulatory approval. As an
+            Indian company, we adhere to stringent IIT‑backed testing before
+            deployment.
+          </p>
+        </div>
+
+        <!-- Market Size -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Market Size</h3>
+          <p class="mb-4">
+            The global commercial drone market is rapidly expanding, with Asia
+            projected to outpace North America by year‑end. India, having
+            legalized drones in 2018, is on track to become the world’s 3rd
+            largest commercial market by 2024.
+          </p>
+          <p>
+            Service is the largest segment, while software remains the fastest
+            growing. North America alone sold <strong>$730&nbsp;M</strong> worth of
+            non‑military drones in 2020.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TEAM ========= -->
+    <section id="team" class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-3xl font-bold mb-10 text-center">Our Team</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Member 1 -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-1">Varun Singh</h3>
+          <p class="text-sm text-gray-500 mb-2">Founder &amp; Director</p>
+          <p class="text-sm">
+            M.Tech &amp; B.Tech Mechanical Engg. 15&nbsp;yrs R&amp;D leadership at IIT
+            Kanpur and MKU Ltd.
+          </p>
+        </div>
+        <!-- Member 2 -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-1">Dr. Kamal Poddar</h3>
+          <p class="text-sm text-gray-500 mb-2">Professor, Aerospace Engg.</p>
+          <p class="text-sm">
+            Mentor with extensive aerodynamics R&amp;D and project management
+            experience at IIT Kanpur.
+          </p>
+        </div>
+        <!-- Member 3 -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-1">Dr. Apurva Kumari</h3>
+          <p class="text-sm text-gray-500 mb-2">Co‑Founder</p>
+          <p class="text-sm">
+            PhD (BITS), expert in image &amp; signal processing, VLSI design, sensor
+            development, data acquisition.
+          </p>
+        </div>
+        <!-- Member 4 -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-1">Ashwani Anand</h3>
+          <p class="text-sm text-gray-500 mb-2">Co‑Founder</p>
+          <p class="text-sm">
+            MBA (UTS, Sydney). Handles sales, marketing &amp; business growth in
+            India &amp; Australia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========= -->
+    <section
+      id="contact"
+      class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16"
+    >
+      <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+        <p class="mb-8">
+          Ready to partner with us or have a question? Reach out and let’s build
+          the future of aerial logistics together.
+        </p>
+        <a
+          href="mailto:info@flyingava.com"
+          class="inline-block bg-white text-indigo-700 font-semibold px-8 py-3 rounded-lg shadow hover:bg-indigo-50"
+          >info@flyingava.com</a
+        >
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========= -->
+    <footer class="py-6 text-center text-sm text-gray-500 bg-white">
+      © 2025 FlyingAVA Tech Pvt Ltd. All rights reserved.
+    </footer>
+
+    <!-- ========= SCRIPTS ========= -->
+    <script>
+      // Simple mobile menu toggle
+      const btn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      btn?.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
+
+
+
+ <!-- Contact Us Section -->
+  <section id="contact" class="px-10 py-16 bg-gray-100">
+    <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Contact Details -->
+      <div>
+        <leah3 class="text-2xl font-semibold mb-4">Our Office</leah3>
+        <p class="text-gray-700 mb-2">3A/172 ,Azad Nagar, Kanpur, UP <br>
+Aerospace Engineering, IIT Kanpur, Kanpur, Uttar Pradesh 208002, IN</p>
+        <p class="text-gray-700 mb-2">Email: <b>flying.avatech@gmail.com</b></p>
+        <p class="text-gray-700">Phone: <b>+919936054688</b></p>
+      </div>
+
+      <!-- Contact Form -->
+      <form
+            action="https://formspree.io/f/mjkrpgob"
+            method="POST"
+            class=""
+          >
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="mt-1 w-full px-2 py-1 sm:px-4 sm:py-3 border border-black rounded-md focus:ring-indigo-500 focus:border-indigo-500 bg-transparent" placeholder="Full Name"
+              />
+            </div>
+            <div class="my-4">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="mt-1 w-full px-2 py-1 sm:px-4 sm:py-3 border border-black rounded-md focus:ring-indigo-500 focus:border-indigo-500" placeholder="Email Address"
+              />
+            </div>
+            <div class="my-4">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="mt-1 w-full px-2 py-1 sm:px-4 sm:py-3 border border-black rounded-md focus:ring-indigo-500 focus:border-indigo-500" placeholder="Subject"
+              />
+            </div>
+            <div class="my-4">
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="mt-1 w-full px-2 py-1 sm:px-4 sm:py-3 border border-black rounded-md focus:ring-indigo-500 focus:border-indigo-500" placeholder="Message"
+              ></textarea>
+            </div>
+            <button
+              id="sendButton"
+              type="submit"
+              class="w-full text-md sm:text-xl border-2 border-black text-white bg-black font-semibold py-3 px-6 rounded-md transition duration-200 hover:bg-white hover:text-black"
+            >
+              Send Message
+            </button>
+          </form>
+    </div>
+  </section>
+
+
+           <!-- Footer -->
+<footer class="bg-black text-white py-6 px-10">
+  <div class="flex flex-col md:flex-row justify-between items-center">
+    <p class="text-sm mb-4 md:mb-0">&copy; 2025 FlyingAVA. All rights reserved.</p>
+    <div class="flex space-x-4">
+      <a href="https://www.facebook.com/p/Flyingava-tech-pvt-ltd-61566438266854/" target="_blank" aria-label="Facebook">
+        <svg class="w-6 h-6 fill-current hover:text-blue-500" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.9.2 1.9.2v2.1h-1c-1 0-1.3.6-1.3 1.2V11h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="https://in.linkedin.com/company/flyingava-tech-private-limited" target="_blank" aria-label="LinkedIn">
+        <svg class="w-6 h-6 fill-current hover:text-blue-300" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.6v-5.4c0-1.3-.5-2.2-1.8-2.2s-2 .9-2 2.2v5.4h-3.6V9h3.6v1.6h.1c.5-.9 1.7-1.9 3.5-1.9 2.7 0 4.8 1.8 4.8 5.6v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM3.5 9h3.6v11.45H3.5V9zM22.2 0H1.8A1.79 1.79 0 0 0 0 1.8v20.4A1.79 1.79 0 0 0 1.8 24h20.4a1.79 1.79 0 0 0 1.8-1.8V1.8A1.79 1.79 0 0 0 22.2 0z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+ </body>

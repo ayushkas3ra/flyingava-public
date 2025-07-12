@@ -1,269 +1,267 @@
+<!-- FlyingAVA – Optimised One‑Page Website (Tailwind v3 CDN) -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FlyingAVA</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="output.css">
-  <script src="script.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyingAVA Tech Pvt Ltd</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-<body class="bg-white font-sans">
-  <!-- Navigation -->
-  <header class="flex items-center justify-between px-6 py-4 sm:px-10 sm:py-6">
-  <!-- Logo -->
-  <div>
-    <a href="https://flying-ava.netlify.app/">
-    <img class="w-16 sm:w-20" src="logo.png" alt="FlyingAVA Logo" />
-    </a>
-  </div>
+    <!-- Tailwind CSS – swap with your compiled output.css in production -->
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js"></script>
 
-  <!-- Nav Links (hidden on small screens) -->
-  <nav class="hidden md:flex space-x-6 text-black font-medium">
-    <a href="https://flying-ava.netlify.app/" class="hover:underline">HOME</a>
-    <a href="aboutUs.html" class="hover:underline">ABOUT US</a>
-    <a href="#services" class="hover:underline">SERVICES</a>
-    <a href="#contact" class="hover:underline">CONTACT</a>
-  </nav>
+    <!-- Custom desktop scrollbar -->
+    <style>
+      @media (min-width: 1024px) {
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-thumb { background: rgb(99 102 241); border-radius: 9999px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+      }
+    </style>
+  </head>
 
-  <!-- Login + Mobile Menu Icon -->
-  <div class="flex items-center space-x-4">
-    <a href="FLYINGAVA TECH work for IIT kanpur.pdf">
-    <button class="hidden md:block bg-black text-white px-4 py-2 rounded-full hover:bg-white hover:text-black border-2 border-black">Download Brochure</button>
-    </a>    
-    <!-- Mobile Menu Icon (visible on small screens) -->
-    <button id="menu" class="md:hidden">
-      <svg class="w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-        <path d="M0 96C0 78.3 14.3 64 32 64h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"/>
-      </svg>
-    </button>
-  </div>
-</header>
-<!-- Mobile menu -->
- <div id="mobileMenu" class="hidden md:hidden flex items-center justify-between px-6 text-black text-sm font-semibold">
-  <a href="https://flying-ava.netlify.app/" class="hover:underline">HOME</a>
-    <a href="aboutUs.html" class="hover:underline">ABOUT US</a>
-    <a href="#services" class="hover:underline">SERVICES</a>
-    <a href="#contact" class="hover:underline">CONTACT</a>
- </div>
-
-
-  <!-- Main Section -->
-  <main class="flex flex-col-reverse lg:flex-row items-center justify-between px-10 py-10">
-    <!-- Text Content -->
-    <div class="max-w-md">
-      <h1 class="text-5xl font-bold leading-tight text-black mb-4">FLYINGAVA</h1>
-      <p class="text-4xl font-bold leading-tight text-black mb-4">Dream higher, fly higher</p>
-      <p class="text-gray-600 mb-6">FLYINGAVA TECH PVT. LTD IS A STARTUP WHICH PLANS TO
-DEVELOP NEW PRODUCTS FOR USE OF HEAVY TRANSPORT
-INDUSTRIES USING UAV AND ARTIFICIAL INTELIGENCE</p>
-<a href="aboutUs.html">
-  <button class="bg-black text-white px-6 py-3 rounded-full hover:bg-white hover:text-black border-2 border-black">LEARN MORE</button>
-</a>
-      
-    </div>
-
-    <!-- Image -->
-    <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
-      <img src="drone.jpeg" alt="Delivery Drone" class="w-full h-auto">
-    </div>
-  </main>
-
-   <!-- About Images -->
-      <section class="flex flex-col md:flex-row flex-wrap items-center justify-center bg-white">
-  <!-- Image Card 1 -->
-  <div class="w-[80vw] h-[30vh] md:w-[30vw] md:h-[20vh] flex items-center justify-center">
-    <img src="startupIndia.png" alt="Startup India" class="w-full h-full object-contain" />
-  </div>
-
-  <!-- Image Card 2 -->
-  <div class="w-[80vw] h-[30vh] md:w-[30vw] md:h-[20vh] flex items-center justify-center">
-    <img src="msme.png" alt="Startup India" class="w-full h-full object-contain" />
-  </div>
-
-  <!-- Image Card 3 -->
-  <div class="w-[80vw] h-[30vh] md:w-[30vw] md:h-[20vh] flex items-center justify-center">
-    <img src="IEC.jpg" alt="Startup India" class="w-full h-full object-contain" />
-  </div>
-</section>
-<div class="w-full h-auto flex items-center justify-center my-6">
-  <img src="Incubed BY IIT kanpur and Pusa Krishi ICAR.png" alt="pusa krishi">
-</div>
-
-  <!-- Our Services Section -->
-  <section id="services" class="px-10 py-16 bg-gray-100">
-    <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
-        <img class="rounded-t-xl" src="mechanicalServices.jpg" alt="Service 1" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2 p-2">Mechanical / Aerospace / Electronics Design</h3>
-        <p class="text-gray-600 text-sm p-2">Complete support from concept to product development.</p>
-      </div>
-      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
-        <img class="rounded-t-xl" src="research_services.jpg" alt="Service 2" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2 p-2">Research-Based Analyses for Defense & Aerospace</h3>
-        <p class="text-gray-600 text-sm p-2">Support for aerodynamics, structural & other product areas.</p>
-      </div>
-      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
-        <img class="rounded-t-xl" src="import_services.jpg" alt="Service 3" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2 p-2">Import & Export Support Services</h3>
-        <p class="text-gray-600 text-sm p-2">Support for import and export of products globally</p>
-      </div>
-      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
-        <img class="rounded-t-xl" src="3dprinting_Services.jpg" alt="Service 4" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2 p-2">3D Printing (Plastic & Metal)</h3>
-        <p class="text-gray-600 text-sm p-2">High-quality printing services for industries & academics.</p>
-      </div>
-      <div class="shadow-md text-center transform-gpu transition duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl bg-white rounded-xl">
-        <img class="rounded-t-xl" src="software_services.jpg" alt="Service 5" class="w-full h-32 object-cover mb-4">
-        <h3 class="text-xl font-semibold mb-2 p-2">Software & IT Solutions</h3>
-        <p class="text-gray-600 text-sm p-2">Web, app, and product development tailored to your needs.</p>
-      </div>
-    </div>
-  </section>
-
-   <!-- Technological Details -->
-        <div class="flex flex-col items-center">
-            <p class="text-xl md:text-4xl font-bold px-6 py-4">Technological Details</p>
-         <div class="flex flex-col items-center justify-center gap-23px">
-            <div data-toggle="q1" class="bg-black text-white hover:bg-gray-800 p-4 mt-2 mx-2 h-12px w-[70vw] text-xl font-bold flex justify-between">What is the USP/ Novelty of the solution / product / service?
-                <svg id="dropDown" class="w-6 cursor-pointer invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-            </div>
-            <div data-section="q1" id="dropDownSection" class="hidden bg-gray-200 p-4 h-12px w-[70vw] text-xl justify-between transition transform ease-in-out delay-100">
-                USP is It will have minimum 100 kg payload carrying ability. It will work in disaster prone areas effectively with flight
-    time of minimum 30 minute at expected speed of 100 km/Hr. It will have Route identification and remembering
-    Technology.
-            </div class='flex flex-col'>
-            <div data-toggle="q2" class="bg-black text-white hover:bg-gray-800 p-4 mt-2 mx-2 h-12px w-[70vw] text-xl font-bold flex justify-between">What key products or services are being offered by the company?
-                <svg id="dropDown2" class="w-6 cursor-pointer invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-            </div>
-            <div data-section="q2" id="dropDownSection2" class="hidden bg-gray-200 p-4 h-12px w-[70vw] text-xl justify-between transition transform ease-in-out delay-100">
-                Key products are Wind tunnels, Water tunnel and drone design assistance and support to all institutions and
-    research facility for aerospace and non aero projects .We are also in crop improvement research with our image
-    processing tech experts
-            </div>
-            <div data-toggle="q3" class="bg-black text-white hover:bg-gray-800 p-4 mt-2 mx-2 h-12px w-[70vw] text-xl font-bold flex justify-between">What is the Stage of development of technology / product ?
-                <svg id="dropDown3" class="w-6 cursor-pointer invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-            </div>
-            <div data-section="q3" id="dropDownSection3" class="hidden bg-gray-200 p-4 h-12px w-[70vw] text-xl justify-between transition transform ease-in-out delay-100">
-                The patent For drone design after ,CAD Design along with FEM is filed, Key Items for Procurements are identified and
-    a trial for structure of glass fiber and carbon fiber is completed.
-            </div>
-            <div data-toggle="q4" class="bg-black text-white hover:bg-gray-800 p-4 mt-2 mx-2 h-12px w-[70vw] text-xl font-bold flex justify-between">Have you validated the technology or product?
-                <svg id="dropDown4" class="w-6 cursor-pointer invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-            </div>
-            <div data-section="q4" id="dropDownSection4" class="hidden bg-gray-200 p-4 h-12px w-[70vw] text-xl justify-between transition transform ease-in-out delay-100">
-                We are in trial stage of testing of key parts like structure design, Motor identification for load bearing capacity and
-    battery size selection and its charging time period.
-            </div>
-            <div data-toggle="q5" class="bg-black text-white hover:bg-gray-800 p-4 mt-2 mx-2 h-12px w-[70vw] text-xl font-bold flex justify-between">Have you done Field trials / Pilot testing (Yes/No)
-                <svg id="dropDown5" class="w-6 cursor-pointer invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-            </div>
-            <div data-section="q5" id="dropDownSection5" class="hidden bg-gray-200 p-4 h-12px w-[70vw] text-xl justify-between transition transform ease-in-out delay-100">
-                No, We are in initial stage and fund raising stage.
-            </div>
-            <div data-toggle="q6" class="bg-black text-white hover:bg-gray-800 p-4 mt-2 mx-2 h-12px w-[70vw] text-xl font-bold flex justify-between">Number of Field trials conducted / sample tested -
-                <svg id="dropDown6" class="w-6 cursor-pointer invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-            </div>
-            <div data-section="q6" id="dropDownSection6" class="hidden bg-gray-200 p-4 h-12px w-[70vw] text-xl justify-between transition transform ease-in-out delay-100">
-                Nil.
-            </div>
-            <div data-toggle="q7" class="bg-black text-white hover:bg-gray-800 p-4 mt-2 mx-2 h-12px w-[70vw] text-xl font-bold flex justify-between">What is the Production Status? Do you have your own production facility?
-                <svg id="dropDown7" class="w-6 cursor-pointer invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-            </div>
-            <div data-section="q7" id="dropDownSection7" class="hidden bg-gray-200 p-4 h-12px w-[70vw] text-xl justify-between transition transform ease-in-out delay-100">
-            We have used IIT Kanpur lab for developing GFRP and CFRP samples to check the load bearing ability for drone structure.
-            </div>
+  <body class="font-sans antialiased text-gray-800 bg-white">
+    <!-- ========== NAVBAR ========= -->
+    <header class="sticky top-0 z-30 bg-white shadow-sm">
+      <nav class="container mx-auto flex items-center justify-between px-4 py-4">
+        <div class="flex items-center space-x-3">
+          <a href="/">
+            <img src="logo.png" alt="FlyingAVA Logo" class="w-12 sm:w-16" />
+          </a>
+          <span class="text-xl font-extrabold text-indigo-600">FlyingAVA</span>
         </div>
-        <div id="seeMoreButton" class="flex flex-col items-center m-4 px-4 rounded-full border-black">
-            <button class="mt-4 text-black bg-white font-bold text-md p-2 rounded-full">See More</button>
-            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+        <ul class="hidden md:flex space-x-6 font-medium">
+          <li><a href="/" class="text-indigo-600 font-semibold">Home</a></li>
+          <li><a href="aboutUs.html" class="hover:text-indigo-600">About Us</a></li>
+          <li><a href="/#services" class="hover:text-indigo-600">Services</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+        </ul>
+        <div class="md:flex hidden">
+          <a href="FLYINGAVA TECH work for IIT kanpur.pdf" class="bg-black text-white px-4 py-2 rounded-full hover:bg-white hover:text-black border-2 border-black">Download Brochure</a>
         </div>
-     </div>
-     </div>
-
-     <!-- Contact Us Section -->
-  <section id="contact" class="px-10 py-16 bg-gray-100">
-    <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <!-- Contact Details -->
-      <div>
-        <leah3 class="text-2xl font-semibold mb-4">Our Office</leah3>
-        <p class="text-gray-700 mb-2">3A/172 ,Azad Nagar, Kanpur, UP <br>
-Aerospace Engineering, IIT Kanpur, Kanpur, Uttar Pradesh 208002, IN</p>
-        <p class="text-gray-700 mb-2">Email: flying.avatech@gmail.com</p>
-        <p class="text-gray-700">Phone: +919936054688</p>
+        <button id="menuBtn" class="md:hidden">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64h384c17.7..."/></svg>
+        </button>
+      </nav>
+      <div id="mobileMenu" class="hidden flex-col md:hidden px-6 pb-4 space-y-2">
+        <a href="/" class="hover:text-indigo-600">Home</a>
+        <a href="#" class="text-indigo-600 font-semibold">About Us</a>
+        <a href="/#services" class="hover:text-indigo-600">Services</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
       </div>
+    </header>
 
-      <!-- Contact Form -->
-      <form
-            action="https://formspree.io/f/mjkrpgob"
-            method="POST"
-            class=""
-          >
-            <div>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                class="mt-1 w-full px-2 py-1 sm:px-4 sm:py-3 border border-black rounded-md focus:ring-indigo-500 focus:border-indigo-500 bg-transparent" placeholder="Full Name"
-              />
+
+    <!-- ========== HERO ========= -->
+    <section id="home" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-24">
+      <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8">
+        <!-- Text -->
+        <div class="max-w-lg mt-10 lg:mt-0">
+          <h1 class="text-4xl sm:text-5xl font-extrabold mb-2 leading-tight">FLYINGAVA</h1>
+          <p class="text-2xl sm:text-3xl font-semibold mb-6">Dream higher, fly higher</p>
+          <p class="text-lg sm:text-xl mb-8">100&nbsp;kg‑payload autonomous drones bringing reliable logistics to the world's most challenging terrains.</p>
+          <a href="aboutUs.html" class="inline-block bg-white text-black font-semibold px-8 py-3 rounded-full border-2 border-black hover:bg-transparent hover:text-white transition">Learn&nbsp;More</a>
+        </div>
+        <!-- Image -->
+        <div class="w-full lg:w-1/2">
+          <img src="drone.jpeg" alt="FlyingAVA heavy‑lift drone" class="w-full h-auto rounded-lg shadow-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TRUST BADGES ========= -->
+    <section class="flex flex-col md:flex-row items-center justify-center divide-y md:divide-y-0 md:divide-x">
+      <img src="startupIndia.png" alt="Startup India" class="w-full md:w-1/3 p-6 object-contain" />
+      <img src="msme.png" alt="MSME" class="w-full md:w-1/3 p-6 object-contain" />
+      <img src="IEC.jpg" alt="IEC" class="w-full md:w-1/3 p-6 object-contain" />
+    </section>
+
+    <!-- ========== SERVICES ========= -->
+    <section id="services" class="bg-gray-50 py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <!-- card -->
+          <div class="group bg-white rounded-xl shadow-md overflow-hidden transform-gpu hover:-translate-y-1 hover:shadow-2xl transition">
+            <img src="mechanicalServices.jpg" alt="Mechanical / Aerospace / Electronics Design" class="w-full h-32 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-1">Mechanical / Aerospace / Electronics Design</h3>
+              <p class="text-sm text-gray-600">Complete support from concept to product development.</p>
             </div>
-            <div class="my-4">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="mt-1 w-full px-2 py-1 sm:px-4 sm:py-3 border border-black rounded-md focus:ring-indigo-500 focus:border-indigo-500" placeholder="Email Address"
-              />
+          </div>
+          <!-- card -->
+          <div class="group bg-white rounded-xl shadow-md overflow-hidden transform-gpu hover:-translate-y-1 hover:shadow-2xl transition">
+            <img src="research_services.jpg" alt="Research services" class="w-full h-32 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-1">Research‑Based Analyses</h3>
+              <p class="text-sm text-gray-600">Support for aerodynamics, structural and defence aerospace projects.</p>
             </div>
-            <div class="my-4">
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                class="mt-1 w-full px-2 py-1 sm:px-4 sm:py-3 border border-black rounded-md focus:ring-indigo-500 focus:border-indigo-500" placeholder="Subject"
-              />
+          </div>
+          <!-- card -->
+          <div class="group bg-white rounded-xl shadow-md overflow-hidden transform-gpu hover:-translate-y-1 hover:shadow-2xl transition">
+            <img src="import_services.jpg" alt="Import & Export" class="w-full h-32 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-1">Import &amp; Export Support</h3>
+              <p class="text-sm text-gray-600">Global freight assistance for critical components & finished goods.</p>
             </div>
-            <div class="my-4">
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-                class="mt-1 w-full px-2 py-1 sm:px-4 sm:py-3 border border-black rounded-md focus:ring-indigo-500 focus:border-indigo-500" placeholder="Message"
-              ></textarea>
+          </div>
+          <!-- card -->
+          <div class="group bg-white rounded-xl shadow-md overflow-hidden transform-gpu hover:-translate-y-1 hover:shadow-2xl transition">
+            <img src="3dprinting_Services.jpg" alt="3D printing" class="w-full h-32 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-1">3D Printing (Plastic & Metal)</h3>
+              <p class="text-sm text-gray-600">Rapid prototypes for industry and academia.</p>
             </div>
-            <button
-              id="sendButton"
-              type="submit"
-              class="w-full text-md sm:text-xl border-2 border-black text-white bg-black font-semibold py-3 px-6 rounded-md transition duration-200 hover:bg-white hover:text-black"
-            >
-              Send Message
+          </div>
+          <!-- card -->
+          <div class="group bg-white rounded-xl shadow-md overflow-hidden transform-gpu hover:-translate-y-1 hover:shadow-2xl transition">
+            <img src="software_services.jpg" alt="Software solutions" class="w-full h-32 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-1">Software &amp; IT Solutions</h3>
+              <p class="text-sm text-gray-600">Web, app and embedded systems tailored to your needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOCUS ========= -->
+    <section id="focus" class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-3xl font-bold mb-6 text-center">Focus Area</h2>
+      <p class="text-lg text-center max-w-3xl mx-auto">Providing logistical support in distant, disaster‑prone environments for people and businesses involved in agriculture.</p>
+    </section>
+
+    <!-- ========== TECHNOLOGY ========= -->
+    <section id="technology" class="bg-gray-50 py-16">
+      <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-10 text-center">Technology &amp; USP</h2>
+
+        <div class="grid gap-10 lg:grid-cols-2">
+          <!-- Tech Brief -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Tech Brief</h3>
+            <p class="mb-4">Our AI‑powered drone can lift <strong>100&nbsp;kg</strong> and autonomously choose the best route between any source and destination.</p>
+            <h4 class="text-xl font-semibold mb-2">Unique Selling Proposition</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>100&nbsp;kg payload capacity</li>
+              <li>Operates effectively in disaster‑prone areas</li>
+              <li>30‑minute flight time at 100&nbsp;km/h</li>
+              <li>Route identification &amp; memory technology</li>
+            </ul>
+          </div>
+
+          <!-- Problem Statement -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Problem Statement</h3>
+            <p>Remote agricultural regions face severe logistical challenges. Our high‑capacity drone bridges this gap by transporting loads swiftly and safely when roads or rail are inaccessible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- ========== TECHNOLOGICAL ACCORDION ========= -->
+    <section class="py-16">
+      <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-10 text-center">Technological Details</h2>
+        <div class="space-y-4" id="accordion">
+          <!-- panel template -->
+          <div class="border border-gray-300 rounded-lg overflow-hidden">
+            <button type="button" class="w-full flex items-center justify-between bg-black text-white px-4 py-3 text-left" data-toggle="q1">
+              USP / Novelty of the solution
+              <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg>
             </button>
+            <div class="hidden p-4 bg-gray-100" data-section="q1">
+              Minimum 100 kg payload capacity; 30‑minute flight at 100 km/h; effective in disaster‑prone areas; route identification & memory.</div>
+          </div>
+
+          <div class="border border-gray-300 rounded-lg overflow-hidden">
+            <button type="button" class="w-full flex items-center justify-between bg-black text-white px-4 py-3 text-left" data-toggle="q2">Key products / services
+              <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></button>
+            <div class="hidden p-4 bg-gray-100" data-section="q2">Wind & water tunnels; drone design support; image‑processing‑driven crop improvement research.</div>
+          </div>
+
+          <div class="border border-gray-300 rounded-lg overflow-hidden">
+            <button type="button" class="w-full flex items-center justify-between bg-black text-white px-4 py-3 text-left" data-toggle="q3">Stage of development
+              <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></button>
+            <div class="hidden p-4 bg-gray-100" data-section="q3">Patent filed; CAD + FEM finished; GFRP & CFRP structural trials completed.</div>
+          </div>
+
+          <div class="border border-gray-300 rounded-lg overflow-hidden">
+            <button type="button" class="w-full flex items-center justify-between bg-black text-white px-4 py-3 text-left" data-toggle="q4">Technology validation
+              <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></button>
+            <div class="hidden p-4 bg-gray-100" data-section="q4">Trials underway for structure, motors and battery sizing; load‑bearing tests in progress.</div>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="technological.html" class="inline-block px-8 py-3 bg-white border border-black rounded-full font-semibold hover:bg-black hover:text-white transition">See&nbsp;More&nbsp;&rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========= -->
+    <section id="contact" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16">
+      <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Details -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Our Office</h3>
+            <address class="not-italic text-gray-100 leading-6 mb-4">
+              3A/172 Azad Nagar, Kanpur, UP<br />
+              Aerospace Engineering Department, IIT Kanpur, 208002 India
+            </address>
+            <p class="mb-2">Email: <a href="mailto:flying.avatech@gmail.com" class="underline font-semibold">flying.avatech@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919936054688" class="underline font-semibold">+91&nbsp;99360&nbsp;54688</a></p>
+          </div>
+
+          <!-- Form (via Formspree) -->
+          <form action="https://formspree.io/f/mjkrpgob" method="POST" class="space-y-4">
+            <input type="text" name="name" placeholder="Full Name" required class="w-full border border-black rounded-md px-4 py-3 bg-transparent focus:ring-indigo-500 focus:border-indigo-500" />
+            <input type="email" name="email" placeholder="Email Address" required class="w-full border border-black rounded-md px-4 py-3 bg-transparent focus:ring-indigo-500 focus:border-indigo-500" />
+            <input type="text" name="subject" placeholder="Subject" class="w-full border border-black rounded-md px-4 py-3 bg-transparent focus:ring-indigo-500 focus:border-indigo-500" />
+            <textarea name="message" rows="4" placeholder="Message" required class="w-full border border-black rounded-md px-4 py-3 bg-transparent focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+            <button type="submit" class="w-full bg-black text-white font-semibold py-3 rounded-md border-2 border-black hover:bg-white hover:text-black transition">Send&nbsp;Message</button>
           </form>
-    </div>
-  </section>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-<footer class="bg-black text-white py-6 px-10">
-  <div class="flex flex-col md:flex-row justify-between items-center">
-    <p class="text-sm mb-4 md:mb-0">&copy; 2025 FlyingAVA. All rights reserved.</p>
-    <div class="flex space-x-4">
-      <a href="https://www.facebook.com/p/Flyingava-tech-pvt-ltd-61566438266854/" target="_blank" aria-label="Facebook">
-        <svg class="w-6 h-6 fill-current hover:text-blue-500" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.9.2 1.9.2v2.1h-1c-1 0-1.3.6-1.3 1.2V11h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"/></svg>
-      </a>
-      <a href="https://in.linkedin.com/company/flyingava-tech-private-limited" target="_blank" aria-label="LinkedIn">
-        <svg class="w-6 h-6 fill-current hover:text-blue-300" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.6v-5.4c0-1.3-.5-2.2-1.8-2.2s-2 .9-2 2.2v5.4h-3.6V9h3.6v1.6h.1c.5-.9 1.7-1.9 3.5-1.9 2.7 0 4.8 1.8 4.8 5.6v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM3.5 9h3.6v11.45H3.5V9zM22.2 0H1.8A1.79 1.79 0 0 0 0 1.8v20.4A1.79 1.79 0 0 0 1.8 24h20.4a1.79 1.79 0 0 0 1.8-1.8V1.8A1.79 1.79 0 0 0 22.2 0z"/></svg>
-      </a>
-    </div>
-  </div>
-</footer>
+    <!-- ========== FOOTER ========= -->
+    <footer class="bg-black text-gray-400 text-sm py-6">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+        <p>© 2025 FlyingAVA Tech Pvt Ltd. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/p/Flyingava-tech-pvt-ltd-61566438266854/" target="_blank" aria-label="Facebook" class="hover:text-white">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12A10 10 0 1 0 11.5 22v-7H9v-3h2.5v-2.3c0-2 1.2-3.2 3-3.2.9 0 1.9.1 1.9.1v2.2h-1.4c-1 0-1.3.7-1.3 1.4V12H17l-.4 3h-2.1v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="https://in.linkedin.com/company/flyingava-tech-private-limited" target="_blank" aria-label="LinkedIn" class="hover:text-white">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.6v-5.4c0-1.3-.5-2.2-1.8-2.2s-2 .9-2 2.2v5.4h-3.6V9h3.6v1.6h.1c.5-.9 1.7-1.9 3.5-1.9 2.7 0 4.8 1.8 4.8 5.6v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM3.5 9h3.6v11.45H3.5V9z"/></svg></a>
+        </div>
+      </div>
+    </footer>
 
+    <!-- ========= SCRIPTS ========= -->
+    <script>
+      // Mobile nav toggle
+      const btn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      btn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
-
-</body>
+      // Simple accordion logic
+      document.getElementById('accordion').addEventListener('click', evt => {
+        const toggle = evt.target.closest('[data-toggle]');
+        if (!toggle) return;
+        const id = toggle.getAttribute('data-toggle');
+        const panel = document.querySelector(`[data-section="${id}"]`);
+        if (panel) {
+          panel.classList.toggle('hidden');
+          toggle.querySelector('svg').classList.toggle('rotate-180');
+        }
+      });
+    </script>
+  </body>
 </html>
